@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {ShieldCheck,MapPin,Lightbulb,Zap,Trash2,Droplets,Construction,Menu,Plus,LogOut,LayoutDashboard,ClipboardList,Camera,CheckCircle2,Clock3,Activity,Search,ArrowRight,Image as ImageIcon} from 'lucide-react';
-const API='http://localhost:5000/api';
+const API = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
 const cats = ['Power Outage','Street Lighting','Water and Sanitation','Garbage Collection','Electricity','Road Maintenance','Drainage','Other'];
 const icons = {'Power Outage': Zap,'Street Lighting': Lightbulb,'Water and Sanitation': Droplets,'Garbage Collection': Trash2,'Electricity': Zap,'Road Maintenance': Construction,'Drainage': Droplets,'Other': ClipboardList};
 const statuses = ['Pending', 'In Progress', 'Resolved'];
